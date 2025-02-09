@@ -17,6 +17,7 @@
 - [EXPLORATORY DATA ANALYSIS](#EXPLORATORY-DATA-ANALYSIS)
 - [S/NO:	FEATURES:	DESCRIPTION:	TYPES OF VARIABLES](#S/NO:-FEATURES:-DESCRIPTION:-TYPES-OF-VARIABLES)
 - [DATA PRE-PROCESSING](#DATA-PRE-PROCESSING)
+- [DATA VISUALIZATION](#DATA-VISUALIZATION)
 - [APPLICATION OF MACHINE LEARNING ALGORITHM FOR PREDICTION](#APPLICATION-OF-MACHINE-LEARNING-ALGORITHM-FOR-PREDICTION)
 - [MODEL SELECTION AND APPLICATION](#MODEL-SELECTION-AND-APPLICATION)
 - [XGBOOST PERFORMANCE AND PROJECT CHALLENGES](#XGBOOST-PERFORMANCE-AND-PROJECT-CHALLENGES)
@@ -95,16 +96,16 @@ Details of dataset;5110 OBSERVATION, 12 COLUMNS
 11. BMI:	BODY MASS INDEX EFFECT ON PREDICTION OF STROKE	     TYPE:INDEPENDENT/NOMINAL
 ## DATA PRE-PROCESSING
 Data pre-processing is a fundamental data mining technique that transforms raw, unstructured data into a clean, consistent, and understandable format. Real-world datasets often contain errors due to inconsistencies, missing values, and incomplete trends. Pre-processing addresses these issues, ensuring that the data is reliable and ready for effective analysis and predictive modeling.
-- Step 1: Import libraries necessary for the processing of our prediction
+### Step 1: Import libraries necessary for the processing of our prediction
 
   ![Screenshot 2022-04-18 130718](https://github.com/user-attachments/assets/91c2c6a6-33a0-4c50-9e75-384032ac54c7)
 
-- Step 2: Import the dataset
+### Step 2: Import the dataset
 
 ![Screenshot 2022-04-18 132329](https://github.com/user-attachments/assets/87ef2ce7-6740-4398-8d18-0f989798233c)
 
 
-- Step 3: Check for the missing values. Since dataset could be messy and incomplete, so we need to perfect our data for quality outcome for prediction.
+### Step 3: Check for the missing values. Since dataset could be messy and incomplete, so we need to perfect our data for quality outcome for prediction.
   
 ![Screenshot 2022-04-18 132959](https://github.com/user-attachments/assets/c59050dd-243f-4f1e-84af-0ea58ba56ebf)
 
@@ -116,7 +117,7 @@ We can fix the missing values using two methods.
 
 ![Screenshot 2022-04-18 135048](https://github.com/user-attachments/assets/78537ded-6e81-4cf7-af6e-5bc2d6a2b775)
 
-- Step 4: Feature Scaling  
+### Step 4: Feature Scaling  
 It is essential to encode categorical variables into numerical values. This conversion ensures that all features are in a consistent format, which is critical for accurate matching and visualization outcomes.
 
 ![Screenshot 2022-04-18 134258](https://github.com/user-attachments/assets/82c984c0-6f9e-49fd-a5e9-b9ea0759d61f)
@@ -128,8 +129,8 @@ Some values were also missing for gender when values were rechecked if there wer
 ID feature won’t be needed in the prediction of stroke, so the ID feature was dropped from the column 
 
 ![Screenshot 2022-04-18 135310](https://github.com/user-attachments/assets/3dd64be4-276d-4972-b660-cffa8b348c86)
-
-- Step 5: Visualization  
+## DATA VISUALIZATION
+### Step 5: Data Visualization  
 After addressing missing values and encoding categorical data into numerical values, we can proceed to visualize the key variables that contribute to stroke prediction. By comparing these features with the target variable (Stroke), we can uncover meaningful patterns and relationships. The visualizations below, along with their brief explanations, illustrate these comparisons and support our predictive analysis.
 
 ![Screenshot 2022-04-25 105846](https://github.com/user-attachments/assets/c23278bc-f596-4995-8102-f2ad6b9102ec)
@@ -228,3 +229,4 @@ For future stroke prediction projects, it is recommended to explore a wider rang
 This stroke dataset prediction project involved several key steps: data preprocessing, feature selection (removing the ID column), handling missing values (mean imputation), standardization, and addressing the class imbalance using SMOTE.  XGBoost achieved the highest performance, with an F1-score of approximately 95%. Given the initial class imbalance, a confusion matrix was used to provide a more detailed understanding of the model's accuracy, further validating XGBoost's performance. Hyperparameter tuning was employed to optimize the XGBoost model and enhance its predictive capabilities. Data visualization was performed in both Python and Tableau, utilizing various dependent and independent variables to gain insights into the dataset and validate initial assumptions.
 
 
+### NOTE: You can check the code for this project above, thank you.
